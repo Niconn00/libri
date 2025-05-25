@@ -1,0 +1,105 @@
+/* Tailwind CSS utility classes extracted from four.html */
+/* Note: These are Tailwind CSS utility class definitions. */
+
+.relative { position: relative; }
+.flex { display: flex; }
+.size-full { width: 100%; height: 100%; }
+.min-h-screen { min-height: 100vh; }
+.flex-col { flex-direction: column; }
+.bg-\[\#111714\] { background-color: #111714; }
+.dark { /* Placeholder for dark mode root class */ }
+.group\/design-root { /* Placeholder for group styling root */ }
+.overflow-x-hidden { overflow-x: hidden; }
+.layout-container { /* Custom class, skip */ }
+.h-full { height: 100%; }
+.grow { flex-grow: 1; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.whitespace-nowrap { white-space: nowrap; }
+.border-b { border-bottom-width: 1px; }
+.border-solid { border-style: solid; }
+.border-b-\[\#29382f\] { border-bottom-color: #29382f; }
+.px-10 { padding-left: 2.5rem; padding-right: 2.5rem; }
+.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.gap-4 { gap: 1rem; }
+.text-white { color: #ffffff; }
+.size-4 { width: 1rem; height: 1rem; }
+.text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+.font-bold { font-weight: 700; }
+.leading-tight { line-height: 1.25; }
+.tracking-\[-0\.015em\] { letter-spacing: -0.015em; }
+.flex-1 { flex: 1 1 0%; }
+.justify-end { justify-content: flex-end; }
+.gap-8 { gap: 2rem; }
+.max-w-\[480px\] { max-width: 480px; }
+.cursor-pointer { cursor: pointer; }
+.justify-center { justify-content: center; }
+.overflow-hidden { overflow: hidden; }
+.rounded-lg { border-radius: 0.5rem; }
+.h-10 { height: 2.5rem; }
+.bg-\[\#29382f\] { background-color: #29382f; }
+.gap-2 { gap: 0.5rem; }
+.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+.tracking-\[0\.015em\] { letter-spacing: 0.015em; }
+.min-w-0 { min-width: 0px; }
+.px-2\.5 { padding-left: 0.625rem; padding-right: 0.625rem; }
+.bg-center { background-position: center; }
+.bg-no-repeat { background-repeat: no-repeat; }
+.aspect-square { aspect-ratio: 1 / 1; }
+.bg-cover { background-size: cover; }
+.rounded-full { border-radius: 9999px; }
+.size-10 { width: 2.5rem; height: 2.5rem; }
+.px-40 { padding-left: 10rem; padding-right: 10rem; }
+.w-\[512px\] { width: 512px; }
+.max-w-\[512px\] { max-width: 512px; }
+.py-5 { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+.max-w-\[960px\] { max-width: 960px; } /* Note: This might conflict with max-w-[512px] if on the same element. Assume they are on different elements or one overrides. */
+.tracking-light { letter-spacing: 0.025em; }
+.text-\[28px\] { font-size: 28px; }
+.text-center { text-align: center; }
+.pb-3 { padding-bottom: 0.75rem; }
+.pt-5 { padding-top: 1.25rem; }
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.min-w-40 { min-width: 10rem; }
+.h-12 { height: 3rem; }
+.w-full { width: 100%; }
+.border-none { border: none; }
+.pl-4 { padding-left: 1rem; }
+.rounded-l-lg { border-top-left-radius: 0.5rem; border-bottom-left-radius: 0.5rem; }
+.border-r-0 { border-right-width: 0px; }
+.form-input { /* Basic styling for form inputs. */
+  border: 1px solid #d1d5db;
+  background-color: white;
+  padding: 0.5rem 0.75rem;
+  line-height: 1.5;
+}
+.resize-none { resize: none; }
+.focus\:outline-0:focus { outline: 2px solid transparent; outline-offset: 2px; }
+.focus\:ring-0:focus { box-shadow: none; }
+.focus\:border-none:focus { border: none; }
+.placeholder\:text-\[\#9eb7a8\]::placeholder { color: #9eb7a8; }
+.rounded-r-none { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+.pr-2 { padding-right: 0.5rem; }
+.rounded-l-none { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+.border-l-0 { border-left-width: 0px; }
+.pl-2 { padding-left: 0.5rem; }
+.text-base { font-size: 1rem; line-height: 1.5rem; }
+.font-normal { font-weight: 400; }
+.leading-normal { line-height: 1.5; }
+.rounded-r-lg { border-top-right-radius: 0.5rem; border-bottom-right-radius: 0.5rem; }
+.bg-transparent { background-color: transparent; }
+.p-0 { padding: 0px; }
+.focus\:outline-none:focus { outline: none; }
+.text-\[\#9eb7a8\] { color: #9eb7a8; }
+.h-auto { height: auto; }
+.px-0 { padding-left: 0px; padding-right: 0px; }
+.pb-2 { padding-bottom: 0.5rem; }
+.pt-4 { padding-top: 1rem; }
+.grid { display: grid; }
+.grid-cols-\[repeat\(auto-fit\,minmax\(158px\,1fr\)\)\] { grid-template-columns: repeat(auto-fit, minmax(158px, 1fr)); }
+.gap-3 { gap: 0.75rem; }
+.aspect-\[3\/4\] { aspect-ratio: 3 / 4; }
+.font-medium { font-weight: 500; }
+
+/* Ensure layout-content-container is defined if it's used, though marked as custom previously */
+.layout-content-container { /* Placeholder if it's a custom reusable class */ }

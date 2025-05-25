@@ -1,0 +1,97 @@
+/* Tailwind CSS utility classes extracted from five.html */
+/* Note: These are Tailwind CSS utility class definitions. */
+
+.relative { position: relative; }
+.flex { display: flex; }
+.size-full { width: 100%; height: 100%; }
+.min-h-screen { min-height: 100vh; }
+.flex-col { flex-direction: column; }
+.bg-\[\#111714\] { background-color: #111714; }
+.dark { /* Placeholder for dark mode root class */ }
+.group\/design-root { /* Placeholder for group styling root */ }
+.overflow-x-hidden { overflow-x: hidden; }
+.layout-container { /* Custom class, skip */ }
+.h-full { height: 100%; }
+.grow { flex-grow: 1; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.whitespace-nowrap { white-space: nowrap; }
+.border-b { border-bottom-width: 1px; }
+.border-solid { border-style: solid; }
+.border-b-\[\#29382f\] { border-bottom-color: #29382f; }
+.px-10 { padding-left: 2.5rem; padding-right: 2.5rem; }
+.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.gap-4 { gap: 1rem; }
+.text-white { color: #ffffff; }
+.size-4 { width: 1rem; height: 1rem; }
+.text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+.font-bold { font-weight: 700; }
+.leading-tight { line-height: 1.25; }
+.tracking-\[-0\.015em\] { letter-spacing: -0.015em; }
+.flex-1 { flex: 1 1 0%; }
+.justify-end { justify-content: flex-end; }
+.gap-8 { gap: 2rem; }
+.gap-9 { gap: 2.25rem; }
+.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+.font-medium { font-weight: 500; }
+.leading-normal { line-height: 1.5; }
+.max-w-\[480px\] { max-width: 480px; }
+.cursor-pointer { cursor: pointer; }
+.justify-center { justify-content: center; }
+.overflow-hidden { overflow: hidden; }
+.rounded-lg { border-radius: 0.5rem; }
+.h-10 { height: 2.5rem; }
+.bg-\[\#29382f\] { background-color: #29382f; }
+.gap-2 { gap: 0.5rem; }
+.min-w-0 { min-width: 0px; }
+.px-2\.5 { padding-left: 0.625rem; padding-right: 0.625rem; }
+.bg-center { background-position: center; }
+.bg-no-repeat { background-repeat: no-repeat; }
+.aspect-square { aspect-ratio: 1 / 1; }
+.bg-cover { background-size: cover; }
+.rounded-full { border-radius: 9999px; }
+.size-10 { width: 2.5rem; height: 2.5rem; }
+.px-40 { padding-left: 10rem; padding-right: 10rem; }
+.py-5 { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+.layout-content-container { /* Custom class, skip */ }
+.max-w-\[960px\] { max-width: 960px; }
+.flex-wrap { flex-wrap: wrap; }
+.gap-3 { gap: 0.75rem; }
+.p-4 { padding: 1rem; }
+.tracking-light { letter-spacing: 0.025em; }
+.text-\[32px\] { font-size: 32px; }
+.min-w-72 { min-width: 18rem; }
+.min-w-\[158px\] { min-width: 158px; }
+.p-6 { padding: 1.5rem; }
+.text-base { font-size: 1rem; line-height: 1.5rem; }
+.text-2xl { font-size: 1.5rem; line-height: 2rem; }
+.text-\[22px\] { font-size: 22px; }
+.pb-3 { padding-bottom: 0.75rem; }
+.pt-5 { padding-top: 1.25rem; }
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gap-1 { gap: 0.25rem; }
+.text-\[\#9eb7a8\] { color: #9eb7a8; }
+.font-normal { font-weight: 400; }
+.text-\[\#0bda43\] { color: #0bda43; }
+.min-h-\[180px\] { min-height: 180px; }
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.justify-around { justify-content: space-around; }
+.text-\[13px\] { font-size: 13px; }
+.tracking-\[0\.015em\] { letter-spacing: 0.015em; }
+.gap-x-4 { column-gap: 1rem; }
+.gap-y-6 { row-gap: 1.5rem; }
+.grid-cols-\[auto_1fr\] { grid-template-columns: auto 1fr; }
+.border-r-2 { border-right-width: 2px; }
+
+/* SVG specific classes - these are often not Tailwind standard and might be part of a custom setup or direct styling */
+/* If stroke, fill, etc. are coming from Tailwind (e.g. `stroke-current`, `fill-blue-500`), those would be standard. */
+/* The SVG paths themselves have fill="currentColor" or direct URLs, not Tailwind classes. */
+/* The <svg> elements don't have Tailwind classes. */
+/* The linearGradient for the chart fill is also not Tailwind class based. */
+/* No specific Tailwind classes seem to be applied to the SVG elements themselves for styling in five.html */
+
+/* Placeholder for .h-full if it was missed in the list (it's used in grid-cols-[auto_1fr] context for children) */
+.h-full { height: 100%; }
+.border-\[\#9eb7a8\] { border-color: #9eb7a8; } /* For the genre breakdown bars */

@@ -1,0 +1,104 @@
+/* Tailwind CSS utility classes extracted from second.html */
+/* Note: These are Tailwind CSS utility class definitions. */
+
+.relative { position: relative; }
+.flex { display: flex; }
+.size-full { width: 100%; height: 100%; }
+.min-h-screen { min-height: 100vh; }
+.flex-col { flex-direction: column; }
+.bg-\[\#111714\] { background-color: #111714; }
+.dark { /* Placeholder for dark mode root class */ }
+.group\/design-root { /* Placeholder for group styling root */ }
+.overflow-x-hidden { overflow-x: hidden; }
+.layout-container { /* Custom class, skip */ }
+.h-full { height: 100%; }
+.grow { flex-grow: 1; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.whitespace-nowrap { white-space: nowrap; }
+.border-b { border-bottom-width: 1px; }
+.border-solid { border-style: solid; }
+.border-b-\[\#29382f\] { border-bottom-color: #29382f; }
+.px-10 { padding-left: 2.5rem; padding-right: 2.5rem; }
+.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.gap-4 { gap: 1rem; }
+.text-white { color: #ffffff; }
+.size-4 { width: 1rem; height: 1rem; }
+.text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+.font-bold { font-weight: 700; }
+.leading-tight { line-height: 1.25; }
+.tracking-\[-0\.015em\] { letter-spacing: -0.015em; }
+.flex-1 { flex: 1 1 0%; }
+.justify-end { justify-content: flex-end; }
+.gap-8 { gap: 2rem; }
+.min-w-40 { min-width: 10rem; } /* 40 * 0.25rem */
+.\!h-10 { height: 2.5rem !important; } /* 10 * 0.25rem */
+.max-w-64 { max-width: 16rem; } /* 64 * 0.25rem */
+.w-full { width: 100%; }
+.rounded-lg { border-radius: 0.5rem; }
+.text-\[\#9eb7a8\] { color: #9eb7a8; }
+.border-none { border: none; }
+.bg-\[\#29382f\] { background-color: #29382f; }
+.pl-4 { padding-left: 1rem; }
+.rounded-l-lg { border-top-left-radius: 0.5rem; border-bottom-left-radius: 0.5rem; }
+.border-r-0 { border-right-width: 0px; }
+.form-input { /* Basic styling for form inputs, often includes border, bg, padding. Tailwind's @tailwindcss/forms plugin handles this more comprehensively. For now, a generic placeholder. */
+  border: 1px solid #ccc; /* Example */
+  background-color: white; /* Example */
+  padding: 0.5rem 0.75rem; /* Example */
+}
+.min-w-0 { min-width: 0px; }
+.resize-none { resize: none; }
+.focus\:outline-0:focus { outline: 0px; }
+.focus\:ring-0:focus { box-shadow: none; } /* Simplified from ring utilities */
+.focus\:border-none:focus { border: none; }
+.placeholder\:text-\[\#9eb7a8\]::placeholder { color: #9eb7a8; }
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.rounded-l-none { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+.border-l-0 { border-left-width: 0px; }
+.pl-2 { padding-left: 0.5rem; }
+.text-base { font-size: 1rem; line-height: 1.5rem; }
+.font-normal { font-weight: 400; }
+.leading-normal { line-height: 1.5; }
+.max-w-\[480px\] { max-width: 480px; }
+.cursor-pointer { cursor: pointer; }
+.justify-center { justify-content: center; }
+.overflow-hidden { overflow: hidden; }
+.h-10 { height: 2.5rem; }
+.gap-2 { gap: 0.5rem; }
+.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+.tracking-\[0\.015em\] { letter-spacing: 0.015em; }
+.aspect-square { aspect-ratio: 1 / 1; }
+.bg-cover { background-size: cover; }
+.rounded-full { border-radius: 9999px; }
+.size-10 { width: 2.5rem; height: 2.5rem; }
+.px-40 { padding-left: 10rem; padding-right: 10rem; }
+.py-5 { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+.layout-content-container { /* Custom class, skip */ }
+.max-w-\[960px\] { max-width: 960px; }
+.flex-wrap { flex-wrap: wrap; }
+.gap-3 { gap: 0.75rem; }
+.p-4 { padding: 1rem; }
+.tracking-light { letter-spacing: 0.025em; }
+.text-\[32px\] { font-size: 32px; }
+.min-w-72 { min-width: 18rem; } /* 72 * 0.25rem */
+.min-w-\[84px\] { min-width: 84px; }
+.h-8 { height: 2rem; }
+.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pb-3 { padding-bottom: 0.75rem; }
+.border-\[\#3d5245\] { border-color: #3d5245; } /* This is likely border-color, assuming it's part of a full border definition e.g. border border-[#3d5245] */
+.border-b-\[3px\] { border-bottom-width: 3px; }
+.border-b-white { border-bottom-color: #ffffff; }
+.pb-\[13px\] { padding-bottom: 13px; }
+.pt-4 { padding-top: 1rem; }
+.border-b-transparent { border-bottom-color: transparent; }
+.shrink-0 { flex-shrink: 0; }
+.gap-x-2 { column-gap: 0.5rem; }
+.pr-4 { padding-right: 1rem; }
+.grid { display: grid; }
+.grid-cols-\[repeat\(auto-fit\,minmax\(158px\,1fr\)\)\] { grid-template-columns: repeat(auto-fit, minmax(158px, 1fr)); }
+.aspect-\[3\/4\] { aspect-ratio: 3 / 4; }
+.font-medium { font-weight: 500; }
+.bg-center { background-position: center; }
+.bg-no-repeat { background-repeat: no-repeat; }
+.bg-\[\#3d5245\] { background-color: #3d5245; }

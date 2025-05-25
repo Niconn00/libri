@@ -1,0 +1,104 @@
+/* Tailwind CSS utility classes extracted from third.html */
+/* Note: These are Tailwind CSS utility class definitions. */
+
+.relative { position: relative; }
+.flex { display: flex; }
+.size-full { width: 100%; height: 100%; }
+.min-h-screen { min-height: 100vh; }
+.flex-col { flex-direction: column; }
+.bg-\[\#111714\] { background-color: #111714; }
+.dark { /* Placeholder for dark mode root class */ }
+.group\/design-root { /* Placeholder for group styling root */ }
+.overflow-x-hidden { overflow-x: hidden; }
+.layout-container { /* Custom class, skip */ }
+.h-full { height: 100%; }
+.grow { flex-grow: 1; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.whitespace-nowrap { white-space: nowrap; }
+.border-b { border-bottom-width: 1px; }
+.border-solid { border-style: solid; }
+.border-b-\[\#29382f\] { border-bottom-color: #29382f; }
+.px-10 { padding-left: 2.5rem; padding-right: 2.5rem; }
+.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.gap-4 { gap: 1rem; }
+.text-white { color: #ffffff; }
+.size-4 { width: 1rem; height: 1rem; }
+.text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+.font-bold { font-weight: 700; }
+.leading-tight { line-height: 1.25; }
+.tracking-\[-0\.015em\] { letter-spacing: -0.015em; }
+.flex-1 { flex: 1 1 0%; }
+.justify-end { justify-content: flex-end; }
+.gap-8 { gap: 2rem; }
+.gap-9 { gap: 2.25rem; }
+.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+.font-medium { font-weight: 500; }
+.leading-normal { line-height: 1.5; }
+.gap-2 { gap: 0.5rem; }
+.max-w-\[480px\] { max-width: 480px; }
+.cursor-pointer { cursor: pointer; }
+.justify-center { justify-content: center; }
+.overflow-hidden { overflow: hidden; }
+.rounded-lg { border-radius: 0.5rem; }
+.h-10 { height: 2.5rem; }
+.bg-\[\#29382f\] { background-color: #29382f; }
+.min-w-0 { min-width: 0px; }
+.px-2\.5 { padding-left: 0.625rem; padding-right: 0.625rem; }
+.bg-center { background-position: center; }
+.bg-no-repeat { background-repeat: no-repeat; }
+.aspect-square { aspect-ratio: 1 / 1; }
+.bg-cover { background-size: cover; }
+.rounded-full { border-radius: 9999px; }
+.size-10 { width: 2.5rem; height: 2.5rem; }
+.px-40 { padding-left: 10rem; padding-right: 10rem; }
+.py-5 { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+.layout-content-container { /* Custom class, skip */ }
+.max-w-\[960px\] { max-width: 960px; }
+.\@container { /* Placeholder for @container directive. Actual styles are applied using @-rules. */ }
+.\@\[480px\]\:px-4 { /* Placeholder for container query style. Example: @container (min-width: 480px) { .this-class { padding-left: 1rem; padding-right: 1rem; } } */ }
+.\@\[480px\]\:py-3 { /* Placeholder for container query style. Example: @container (min-width: 480px) { .this-class { padding-top: 0.75rem; padding-bottom: 0.75rem; } } */ }
+.w-full { width: 100%; }
+/* .justify-end - already listed */
+.\@\[480px\]\:rounded-lg { /* Placeholder for container query style. Example: @container (min-width: 480px) { .this-class { border-radius: 0.5rem; } } */ }
+.min-h-80 { min-height: 20rem; } /* 80 * 0.25rem */
+.text-\[22px\] { font-size: 22px; }
+.text-left { text-align: left; }
+.pb-3 { padding-bottom: 0.75rem; }
+.pt-5 { padding-top: 1.25rem; }
+.pt-1 { padding-top: 0.25rem; }
+.pb-2 { padding-bottom: 0.5rem; }
+.pt-4 { padding-top: 1rem; }
+.gap-6 { gap: 1.5rem; }
+.rounded { border-radius: 0.25rem; }
+.bg-\[\#3d5245\] { background-color: #3d5245; }
+.h-2 { height: 0.5rem; }
+.flex-wrap { flex-wrap: wrap; }
+.items-end { align-items: flex-end; }
+.min-w-40 { min-width: 10rem; }
+.form-input { /* Basic styling for form inputs. Consider using @tailwindcss/forms for comprehensive styling. */
+  border: 1px solid #d1d5db; /* Default border color from Tailwind */
+  background-color: white;
+  padding: 0.5rem 0.75rem;
+  line-height: 1.5;
+}
+.resize-none { resize: none; }
+.focus\:outline-0:focus { outline: 2px solid transparent; outline-offset: 2px; }
+.focus\:ring-0:focus { box-shadow: none; } /* Simplified, actual ring utilities are more complex */
+.border { border-width: 1px; }
+.border-\[\#3d5245\] { border-color: #3d5245; }
+.bg-\[\#1c2620\] { background-color: #1c2620; }
+.focus\:border-\[\#3d5245\]:focus { border-color: #3d5245; }
+.h-14 { height: 3.5rem; }
+.placeholder\:text-\[\#9eb7a8\]::placeholder { color: #9eb7a8; }
+.p-\[15px\] { padding: 15px; }
+.text-base { font-size: 1rem; line-height: 1.5rem; }
+.font-normal { font-weight: 400; }
+.items-stretch { align-items: stretch; }
+.min-w-\[84px\] { min-width: 84px; }
+.tracking-\[0\.015em\] { letter-spacing: 0.015em; }
+.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* Adding px-4, py-3 as general classes as they appear without container queries too */
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
