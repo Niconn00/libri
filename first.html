@@ -75,74 +75,19 @@
             <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-white tracking-light text-[32px] font-bold leading-tight min-w-72">Welcome back, Sarah</p></div>
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Currently Reading</h2>
             <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
-              <div class="flex items-stretch p-4 gap-3">
-                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDXzaUVnNzighZGA7hd8WcJVnoMhYUhOlhyM60yffTN0xsGcKYaG1tKpTlfpxRO_gkKPUhjxKjshhobM3NbEYL9ZpUwhO4xNcYWk0qkptJBQPQJMPNG9vWeKTb3rhGlSgldx746VyRpFXiwhEPbWTCNwqMVGUq6H2lfJYfWh9QXByDnCNUKdfS8HIpAACDfx7qLgAY-cUFUBrFBPT0jcK8QRGLpXKIwyZEk9I2NF2omwdaArRDM1VeQ-Uc8mBq4nQk7R2cDMDY_49rn");'
-                  ></div>
-                  <div>
-                    <p class="text-white text-base font-medium leading-normal">The Enchanted Forest</p>
-                    <p class="text-[#9dacbe] text-sm font-normal leading-normal">Author A. Smith</p>
-                  </div>
-                </div>
-                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1CuFRc6h1UY6PxrKZMjRkS05MYC3vF6cV_WCYhvZYFDE5gUYaw_9Ukb4x1VUXDCyouTHQkPnJAQNUn9R9NDddQoTh6k27EL-ghGcsMkvPSwlGD4kpQ9UefPD9kwW8e1Dc96hYP5hWNzuoNp125g6ZexWnjgovtcP-4MBz5cQ6YeY5YieZ5JHTwOVaLfvmOI08I8VLosQ3J6ImufcTzkReYgkDF99XxU906Fkx7Rcoarsqqir4VD7CBYky5WXciWgx0eMhk5HOJmdT");'
-                  ></div>
-                  <div>
-                    <p class="text-white text-base font-medium leading-normal">Space Odyssey</p>
-                    <p class="text-[#9dacbe] text-sm font-normal leading-normal">Author B. Johnson</p>
-                  </div>
-                </div>
-                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBnTdxZIVivY-xU6_aebWaYsCBMO_NEW5ZoVzITZaz0NGRcShSKi-FVIbHZQJjNRqWltAVSBPC2zeFSTZn_MHZkME4aW4dkzsyC1oXZwjj3K8nrwhdNh5FTXDkIfKbyg2DCMseWD3l0wW_oXKmyOyrfLcCGO4nItvQJNcCGrx7o8N8dywvWoQvzTT4O7MhUlG4yQizGc_HaBF9ydtbO9Fmx3LyHOeKFCLZyQM4pO-KYVtVgcbArfNxGP-23wX7jB10YUzbx4mVUsrls");'
-                  ></div>
-                  <div>
-                    <p class="text-white text-base font-medium leading-normal">The Secret of the Old Mill</p>
-                    <p class="text-[#9dacbe] text-sm font-normal leading-normal">Author C. Davis</p>
-                  </div>
-                </div>
+              <div id="currently-reading-container" class="flex items-stretch p-4 gap-3">
+                <!-- Book items will be populated by JavaScript -->
               </div>
             </div>
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Recently Read</h2>
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDoo88dymHx5PXCkDiC-y7pcyBFzi08uBMhIVT6RPVa09TOlmfgbBKgIUVqttWzvDGYeCZ0lHP9NlYHZJrgWcczfgGcLdp-lXG71DVtHgI3zI-iDBGfkpKg4ku8B1Cpu8wNHPDAAoaI1eGUUFh3IpHVAiXmPd1MIkbRaa65JzX2MS79VAikfat65SspL1e80T9XUBq0POR0MiqoSxWtuFdiUs2iGhxPfr_PW8TPCapeafHIuwk-gUP7PgRpNLT8eFzsYWK5BvoR_K0i");'
-                ></div>
-                <p class="text-white text-base font-medium leading-normal">The Lost City</p>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqGlOSwK-U5kpjoYCy9pzLcPEuBzm3at0MW83dLn-z_ZiYrSiRB58ujsR4h1PbQSPuKpmaT9bUwkmZSpV_HzDjr-bdNKm1QZg5UDnWHcUUJuHjCXHuvpLVt8h2tWkP7E4Uc64U5lNQZhqbNABB-fj3alxo_8OLUwyBVvU_h_YEtW8PqeI1JRxq0NQ0V42_LQE0lCOcTTdWkM3HHgFdZqAnQAhR_k7C1LgK8meYhZqjKFPG9k9vMTRVqJD7vkrub_Cp-IUbINjN7bwH");'
-                ></div>
-                <p class="text-white text-base font-medium leading-normal">Echoes of the Past</p>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDfo78HP8ds0a0oU-C5o7lLf8v5bbr6ScM3RGtNjgVLHoJ6rMjO69pQ-perOwXUrqfXT5W44kA5N1YnBtMkitaITDFhGwVRe6BvMFdoMaRAoo1nyoRKlv3p9XtJK0SuMjYWK_18K06yRYbmloo8w6RZZVIZbSDKe8U84-Qc5wm-2FSFbJC_YHszBkpxPT18_3XCyx_wAqs_Nu0kLs1Q4GvOMTNnrozyxaPymn-Mocp5WUc2ROb-j-uQhUs0KjblMoXcv-j1WaA5P5qV");'
-                ></div>
-                <p class="text-white text-base font-medium leading-normal">Whispers in the Wind</p>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBb1OXIOj4t4gupv9Z-W4Rk7bhyu0TuCqgg_3PYPlzEykDN7I7-zxDxdAJ_CVWM6hZ5ioO0VrSN7BERlj9xhM8hpKCXWILCGQYpYamRQr4JM-9WTMZpnUTdwFrjBlglZHHTL-bKv85cdnwidy3R-oZzs-C3Clrv2Pu1H6YEYu1dqcuZduw3j9bjXmJSkC2DX1EA8XzFvT7u4eGlPR3TNAzZiWISaE6kiu4T1qCTtw5IgrJe0HUetcFS-wh0gSDjUqk7BFiYe-dUR7vo");'
-                ></div>
-                <p class="text-white text-base font-medium leading-normal">Shadows of Tomorrow</p>
-              </div>
+            <div id="recently-read-container" class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <!-- Book items will be populated by JavaScript -->
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="static/js/dashboard.js" defer></script>
   </body>
 </html>
 

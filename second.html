@@ -91,6 +91,7 @@
                     placeholder="Search for books or authors"
                     class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#2b3540] focus:border-none h-full placeholder:text-[#9dacbe] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
                     value=""
+                    id="search-explore-input"
                   />
                 </div>
               </label>
@@ -117,49 +118,8 @@
               </div>
             </div>
             <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Featured Books</h3>
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBAUyiCg_Mro16RClWZzN3Qmu8lCvFrChXsi3QeqFsSQcQGkRQ-xQGYQcD-fUsvAfXKjBuPcqeeKDhU24nHJcEDS5dkuOxuSix6q1ymryZ9pzX8cUsO3CnwOP6D7yksTSfV2i1HuSDZEQdPdbcmyrTX1yJ0QcqfFbNmwHwcVhfS_jreq3P82avMRXRhQLqfbURfSoq-gvvSFrnl6eQtMYana5CuA6PxCUtOVPROvhJ-scFhEWO2JAlrU25fqNHuMhaJdmrOtiSaHry");'
-                ></div>
-                <p class="text-white text-base font-medium leading-normal">The Secret Garden</p>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD9Rop1qbOXvpk8hjvlWzyk8NnXtOwnklq8u-rrdZ36Eu3vR95HPaNKyLowFe9k6JDUuG52tidDmNqjk_5lxSpsSURBbha6hwJU9pGl-gzHc-ayt-gfRE-d0MNgcVG2XjtR8CU4NXXVV59vrm0a-skLJrHENrtx7exUDSNwOjWqU_YluvPix3j_SQ1wvV4L8UKDDON7RaamOQTEZEuQfPkE9aSLZlgO4Al8PHLSzcZPx-rO0QUcr3o4TftJKALwn0mPfRubS9JyzPDY");'
-                ></div>
-                <p class="text-white text-base font-medium leading-normal">The Silent Patient</p>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCbV-lop9m8Wqy3-t4-2uSpbUkeqUGVGa4lsEeNJCoPAr6Ni39HdGMN8FIDV7EW-CCvThxoNVUfaCgGhYzkNDq2cqT4W0G-s766k8mgVz6GDOaVKbK9cYsDTzv2n5iW_UDZoytejrzQOk1A9wghtT1MGly1FktV8UQbZ50nqGTNKmGPhSJFNH0kBfkCZxG53nx1XP2DssfwLlhBvkX1X_SzusKTr4JLgMIdUMs4rHL56-AoIqrIdEx2WT-6xKmTvG7yTRO5eqjTWlCY");'
-                ></div>
-                <p class="text-white text-base font-medium leading-normal">Where the Crawdads Sing</p>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC-IVcp_gN02jII3zhV2_ENNazJTsIEUo0b_lefLGkanXVDbwdDw19oxiLbBkAGLwSbs_WGiiTHiPB0c0jq6WX_I_2XTaZRmkDy8sVtXiOOdZ3zV-pyrCnFbF5LyszP8ywzxq8rHzC4KI3C2bgOgu19OD47bTd4d0deMW_0j5J7BFs137ZWs5yC1URG4cKj_fuYyqVwfHg8bBVRLBQlp-7foaHLsIAo78HAxRL71pQ1Xv6PGEwdXs4IwVAv_-CKxrcp3D36z8G-k1La");'
-                ></div>
-                <p class="text-white text-base font-medium leading-normal">The Alchemist</p>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCYIk6EEcbB4RWfvlcDT2O1NFxzoZKUHxZdrIXxCKrLALjWDf0KyrsOJI38yFpd3GkF5pBdOmM5Gf3TmYLveVxgTJJoqQOcdesOH6J0R70tVaTwgf5VdpgsRslZeqweKbmnL1gO9h-9n6DhCef9nPmGGFsLDXIzHMPqBP2spxUwYHTmgCWrnygYnoeyFlzgs4eC9sXrGS_ima8nMe2rvN7Muu84kGu5jAn5pkNazhJa_kNf4aDNb872_OGyrJcrWuaDoKktdDngi-FR");'
-                ></div>
-                <p class="text-white text-base font-medium leading-normal">The Great Gatsby</p>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDbLomMT0QOOOCT0Y2xo2Xow08JoBTbXAg4pWZYf8p_UCsbxuEHnRSCDEDAj18PNjgHsCkWKcAejbIDMz-jdyZhKeWSjNOXG1JkG7TgOhiq0fMpwwHNv10BSmfZHPpJQzGOFFGifHGrqkSTYJkoE77lvRQ_f2ctif9QmOhL7f53CNRE_rfQoUnXZCXEL53tMmlFAGWE3IcYJeFDE-b4Cz0eoHAURHmy4XAR8yrC3iUZYUnaPYWMy7ocaC764Qcs0jMyD6gCpUM6sFuX");'
-                ></div>
-                <p class="text-white text-base font-medium leading-normal">To Kill a Mockingbird</p>
-              </div>
+            <div id="featured-books-container" class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <!-- Book items will be populated by JavaScript -->
             </div>
           </div>
         </div>
@@ -206,5 +166,6 @@
         </footer>
       </div>
     </div>
+    <script src="static/js/explore.js" defer></script>
   </body>
 </html>
