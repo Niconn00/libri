@@ -5,7 +5,7 @@
       rel="stylesheet"
       as="style"
       onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
     />
 
     <title>Stitch Design</title>
@@ -14,23 +14,47 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
   <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-[#111714] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#14191f] dark group/design-root overflow-x-hidden" style='font-family: Newsreader, "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#29382f] px-10 py-3">
-          <div class="flex items-center gap-4 text-white">
-            <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2b3540] px-10 py-3">
+          <div class="flex items-center gap-8">
+            <div class="flex items-center gap-4 text-white">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+              </div>
+              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">BookTracker</h2>
             </div>
-            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">BookTracker</h2>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
               <a class="text-white text-sm font-medium leading-normal" href="#">Home</a>
               <a class="text-white text-sm font-medium leading-normal" href="#">My Books</a>
               <a class="text-white text-sm font-medium leading-normal" href="#">Explore</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Community</a>
             </div>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <label class="flex flex-col min-w-40 !h-10 max-w-64">
+              <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                <div
+                  class="text-[#9dacbe] flex border-none bg-[#2b3540] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                  data-icon="MagnifyingGlass"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  placeholder="Search"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#2b3540] focus:border-none h-full placeholder:text-[#9dacbe] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                  value=""
+                />
+              </div>
+            </label>
             <button
-              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#29382f] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#2b3540] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
             >
               <div class="text-white" data-icon="Bell" data-size="20px" data-weight="regular">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
@@ -42,102 +66,78 @@
             </button>
             <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCEKyPY2Gu61nZNoQtZK4J3mECxDpXUJxnp0J-B49BusfnfT9iX9nIhuM51enl388MjpO4btPAVyMB2acJDSgNARetv4W56lzW5vVa5jJZ58mz9FVgcPPmKKtG8aYbXGy6AV2XqqXAryLW_TY7fk44xhhP1wIRGqYJGnIv_IxrcyYZ-WIjB5GQzER3MMchgFOmv_kZUpiyfUFrOvvqUWZCxL3l9_IQppDCjgFIuWMVVdfoBKeyiJfmnqiU33gbk9IIRu_4m_nVi6QY");'
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCThuyiRYGv_5WelcQlmpIgiMVw8eLLUkWj99EGSWm-ExcUl8Lpw582510sEbW84uOWY79cqfuNwY6WH1bGkbD7-LkF8tADdhWCH3SVuKRUWQGoe5XHMzrR4DVQOgrvih-Sf3_Ht-W18jeXrwBQOyGMXS-aGeDAjql8fTfzPDKUwqwC2ulQjK7eRPTnLXpc7dG2YH_F_d24BNUYzUbGBrCtxgnmrfHY7Pz9gmmBmVPYCiSmxgaMMeeO7O-vnp9OyG4Jo4QFeppoVFIF");'
             ></div>
           </div>
         </header>
         <div class="px-40 flex flex-1 justify-center py-5">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-white tracking-light text-[32px] font-bold leading-tight min-w-72">Currently Reading</p></div>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                <div class="flex flex-[2_2_0px] flex-col gap-4">
-                  <div class="flex flex-col gap-1">
-                    <p class="text-white text-base font-bold leading-tight">The Quantum Paradox</p>
-                    <p class="text-[#9eb7a8] text-sm font-normal leading-normal">Dr. Aris Thorne</p>
+            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-white tracking-light text-[32px] font-bold leading-tight min-w-72">Welcome back, Sarah</p></div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Currently Reading</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDXzaUVnNzighZGA7hd8WcJVnoMhYUhOlhyM60yffTN0xsGcKYaG1tKpTlfpxRO_gkKPUhjxKjshhobM3NbEYL9ZpUwhO4xNcYWk0qkptJBQPQJMPNG9vWeKTb3rhGlSgldx746VyRpFXiwhEPbWTCNwqMVGUq6H2lfJYfWh9QXByDnCNUKdfS8HIpAACDfx7qLgAY-cUFUBrFBPT0jcK8QRGLpXKIwyZEk9I2NF2omwdaArRDM1VeQ-Uc8mBq4nQk7R2cDMDY_49rn");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">The Enchanted Forest</p>
+                    <p class="text-[#9dacbe] text-sm font-normal leading-normal">Author A. Smith</p>
                   </div>
-                  <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#29382f] text-white text-sm font-medium leading-normal w-fit"
-                  >
-                    <span class="truncate">Continue Reading</span>
-                  </button>
                 </div>
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDle9gcC-C8wMxLLNc2PEW57xRUieNjaKjmLvJ2FDUn2P3kGl8MAseWlAqz9P-ZSIoWXg2VUa_XqbS0ileyjNsnyEw2K4rGjFV6az1NsWeLpnAMKSBCkuI9SKoV7aP9ozUsMEbnc7ztwaHbM5axTPG9cGh96jDbq_hXaN8KlA48rR-m1y3UvNmldpU9xVzibHD5LSdnr2JH0D-bAPDh2jo94utefaHvjG7SLeujO-n-vK9TT8c25KVZyH-P-GeoM_iH49BLTXFfQY8");'
-                ></div>
-              </div>
-            </div>
-            <div class="flex flex-col gap-3 p-4">
-              <div class="flex gap-6 justify-between">
-                <p class="text-white text-base font-medium leading-normal">Progress</p>
-                <p class="text-white text-sm font-normal leading-normal">65%</p>
-              </div>
-              <div class="rounded bg-[#3d5245]"><div class="h-2 rounded bg-white" style="width: 65%;"></div></div>
-            </div>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                <div class="flex flex-[2_2_0px] flex-col gap-4">
-                  <div class="flex flex-col gap-1">
-                    <p class="text-white text-base font-bold leading-tight">Echoes of the Void</p>
-                    <p class="text-[#9eb7a8] text-sm font-normal leading-normal">Lyra Nova</p>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1CuFRc6h1UY6PxrKZMjRkS05MYC3vF6cV_WCYhvZYFDE5gUYaw_9Ukb4x1VUXDCyouTHQkPnJAQNUn9R9NDddQoTh6k27EL-ghGcsMkvPSwlGD4kpQ9UefPD9kwW8e1Dc96hYP5hWNzuoNp125g6ZexWnjgovtcP-4MBz5cQ6YeY5YieZ5JHTwOVaLfvmOI08I8VLosQ3J6ImufcTzkReYgkDF99XxU906Fkx7Rcoarsqqir4VD7CBYky5WXciWgx0eMhk5HOJmdT");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Space Odyssey</p>
+                    <p class="text-[#9dacbe] text-sm font-normal leading-normal">Author B. Johnson</p>
                   </div>
-                  <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#29382f] text-white text-sm font-medium leading-normal w-fit"
-                  >
-                    <span class="truncate">Continue Reading</span>
-                  </button>
                 </div>
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD0qAIK-lUDyS_QWTJXsTiHE4uRstZ8cq-qCF-enUK_b-trf0J-8bUXwBGuVyWQqzuXmtxnQ0WpGBh2NGIiujtjJg6s63dZtMmKNsekfL7TG7gsjgdl771fOW8COafo_8Um8bLytMrJTRjB8eJm5UG-cAzD3IdyOctmAIewFrilfFUUGeu1ewKGayr-1nimaiAyyCX5MhO8j7JJiVuaUi1VH3XwbgVZtaoPRVeEpG9ScnM5TEBvO8w_9r3rQhKOKJVxOkqB3sqyTMU");'
-                ></div>
-              </div>
-            </div>
-            <div class="flex flex-col gap-3 p-4">
-              <div class="flex gap-6 justify-between">
-                <p class="text-white text-base font-medium leading-normal">Progress</p>
-                <p class="text-white text-sm font-normal leading-normal">30%</p>
-              </div>
-              <div class="rounded bg-[#3d5245]"><div class="h-2 rounded bg-white" style="width: 30%;"></div></div>
-            </div>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                <div class="flex flex-[2_2_0px] flex-col gap-4">
-                  <div class="flex flex-col gap-1">
-                    <p class="text-white text-base font-bold leading-tight">The Last Starfarer</p>
-                    <p class="text-[#9eb7a8] text-sm font-normal leading-normal">Jax Orion</p>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBnTdxZIVivY-xU6_aebWaYsCBMO_NEW5ZoVzITZaz0NGRcShSKi-FVIbHZQJjNRqWltAVSBPC2zeFSTZn_MHZkME4aW4dkzsyC1oXZwjj3K8nrwhdNh5FTXDkIfKbyg2DCMseWD3l0wW_oXKmyOyrfLcCGO4nItvQJNcCGrx7o8N8dywvWoQvzTT4O7MhUlG4yQizGc_HaBF9ydtbO9Fmx3LyHOeKFCLZyQM4pO-KYVtVgcbArfNxGP-23wX7jB10YUzbx4mVUsrls");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">The Secret of the Old Mill</p>
+                    <p class="text-[#9dacbe] text-sm font-normal leading-normal">Author C. Davis</p>
                   </div>
-                  <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#29382f] text-white text-sm font-medium leading-normal w-fit"
-                  >
-                    <span class="truncate">Continue Reading</span>
-                  </button>
                 </div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Recently Read</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
                 <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqMJ5ruaMCzU_D4a96mRm-VvYc4KnJabHSFr6pZ2hiK52ptj8D76f2Opql8hkC-7vYTdDpkQb6OEPHZbv2ZgyLLqlxMorf4h-OrASMf-kAaBfJ9m612AnLvkIIOR1y60_2tVxmwQgIUdwgBp9CfN-rzVmk74P_tejmIk_NNM3Vrs9waUowepkno21z4o2XM_eJ2mRS0ucmyocrsoEqZm_jS1sovCKODI_Hz5yDWxO612R2-Pu81vxBB_sXXFEQQCw8SCKYXD57Sg0");'
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDoo88dymHx5PXCkDiC-y7pcyBFzi08uBMhIVT6RPVa09TOlmfgbBKgIUVqttWzvDGYeCZ0lHP9NlYHZJrgWcczfgGcLdp-lXG71DVtHgI3zI-iDBGfkpKg4ku8B1Cpu8wNHPDAAoaI1eGUUFh3IpHVAiXmPd1MIkbRaa65JzX2MS79VAikfat65SspL1e80T9XUBq0POR0MiqoSxWtuFdiUs2iGhxPfr_PW8TPCapeafHIuwk-gUP7PgRpNLT8eFzsYWK5BvoR_K0i");'
                 ></div>
+                <p class="text-white text-base font-medium leading-normal">The Lost City</p>
               </div>
-            </div>
-            <div class="flex flex-col gap-3 p-4">
-              <div class="flex gap-6 justify-between">
-                <p class="text-white text-base font-medium leading-normal">Progress</p>
-                <p class="text-white text-sm font-normal leading-normal">15%</p>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqGlOSwK-U5kpjoYCy9pzLcPEuBzm3at0MW83dLn-z_ZiYrSiRB58ujsR4h1PbQSPuKpmaT9bUwkmZSpV_HzDjr-bdNKm1QZg5UDnWHcUUJuHjCXHuvpLVt8h2tWkP7E4Uc64U5lNQZhqbNABB-fj3alxo_8OLUwyBVvU_h_YEtW8PqeI1JRxq0NQ0V42_LQE0lCOcTTdWkM3HHgFdZqAnQAhR_k7C1LgK8meYhZqjKFPG9k9vMTRVqJD7vkrub_Cp-IUbINjN7bwH");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Echoes of the Past</p>
               </div>
-              <div class="rounded bg-[#3d5245]"><div class="h-2 rounded bg-white" style="width: 15%;"></div></div>
-            </div>
-            <div class="flex justify-end overflow-hidden px-5 pb-5">
-              <button
-                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-5 bg-[#38e07b] text-[#111714] text-base font-bold leading-normal tracking-[0.015em] min-w-0 gap-4 pl-4 pr-6"
-              >
-                <div class="text-[#111714]" data-icon="Plus" data-size="24px" data-weight="regular">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                    <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
-                  </svg>
-                </div>
-                <span class="truncate">Add New Book</span>
-              </button>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDfo78HP8ds0a0oU-C5o7lLf8v5bbr6ScM3RGtNjgVLHoJ6rMjO69pQ-perOwXUrqfXT5W44kA5N1YnBtMkitaITDFhGwVRe6BvMFdoMaRAoo1nyoRKlv3p9XtJK0SuMjYWK_18K06yRYbmloo8w6RZZVIZbSDKe8U84-Qc5wm-2FSFbJC_YHszBkpxPT18_3XCyx_wAqs_Nu0kLs1Q4GvOMTNnrozyxaPymn-Mocp5WUc2ROb-j-uQhUs0KjblMoXcv-j1WaA5P5qV");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Whispers in the Wind</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBb1OXIOj4t4gupv9Z-W4Rk7bhyu0TuCqgg_3PYPlzEykDN7I7-zxDxdAJ_CVWM6hZ5ioO0VrSN7BERlj9xhM8hpKCXWILCGQYpYamRQr4JM-9WTMZpnUTdwFrjBlglZHHTL-bKv85cdnwidy3R-oZzs-C3Clrv2Pu1H6YEYu1dqcuZduw3j9bjXmJSkC2DX1EA8XzFvT7u4eGlPR3TNAzZiWISaE6kiu4T1qCTtw5IgrJe0HUetcFS-wh0gSDjUqk7BFiYe-dUR7vo");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Shadows of Tomorrow</p>
+              </div>
             </div>
           </div>
         </div>
@@ -145,3 +145,4 @@
     </div>
   </body>
 </html>
+
