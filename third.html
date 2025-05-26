@@ -5,7 +5,7 @@
       rel="stylesheet"
       as="style"
       onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
     />
 
     <title>Stitch Design</title>
@@ -14,108 +14,345 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
   <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-[#111714] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#14191f] dark group/design-root overflow-x-hidden" style='font-family: Newsreader, "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#29382f] px-10 py-3">
-          <div class="flex items-center gap-4 text-white">
-            <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2b3540] px-10 py-3">
+          <div class="flex items-center gap-8">
+            <div class="flex items-center gap-4 text-white">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+              </div>
+              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">BookTracker</h2>
             </div>
-            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">NovelFlow</h2>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="#">Home</a>
               <a class="text-white text-sm font-medium leading-normal" href="#">My Books</a>
               <a class="text-white text-sm font-medium leading-normal" href="#">Explore</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">Community</a>
             </div>
-            <div class="flex gap-2">
-              <button
-                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#29382f] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
-              >
-                <div class="text-white" data-icon="MagnifyingGlass" data-size="20px" data-weight="regular">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <label class="flex flex-col min-w-40 !h-10 max-w-64">
+              <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                <div
+                  class="text-[#9dacbe] flex border-none bg-[#2b3540] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                  data-icon="MagnifyingGlass"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                     <path
                       d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
                     ></path>
                   </svg>
                 </div>
-              </button>
-              <button
-                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#29382f] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
-              >
-                <div class="text-white" data-icon="Bell" data-size="20px" data-weight="regular">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                      d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
-                    ></path>
-                  </svg>
-                </div>
-              </button>
-            </div>
+                <input
+                  placeholder="Search"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#2b3540] focus:border-none h-full placeholder:text-[#9dacbe] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                  value=""
+                />
+              </div>
+            </label>
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#2b3540] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+            >
+              <div class="text-white" data-icon="Bell" data-size="20px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
             <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfLIKXxZuDkCKyu7pEE0jeQs5rdXojkmfbjqGC-lQvF3f6nz4dxkkYy97_7Cbem0p3cRh7AEijZ3J7K5PwThGY_fcg3fSQRM_okDpIlrP-knYXgAHWL42_S_vroSYsTMHuV1aOQk6qAkNtvm5fXwLYBXO-gQv17SBMmP84eqF_gbBj5oIykoyyNgu79zcG71O44ZbbquZhAsk0DKKsm6xcb9drWbvHCT5X-vBnoHS4fTMTOJ_5w9_Tiw6vGuL8Rkvhc2M4p0fMI9s");'
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKyYWZKl8gZr3HzSQOOgzNN5IXVshYmtE6u7eVp19QxzOpPUc5jAvAXyXN73VGxdGTgi-AnIru7nORVFLbwpD09zSE-HCX8zr-uwFzIxZvZQTaCPhZz-2RHhwdVY6v3FN3bOAXo_0DdJ1q9hShjd0f-do7jhySORJ9V_d1GwaN2VsXMpl0RYYiRGJL3qu5fzUkcBHdOnYRvblLJRC_4hNYQkVy_XoWt4tyDOaipj_YHiUBSZGfuE46yhN31JgSxhLlzlQ7KtqziX7y");'
             ></div>
           </div>
         </header>
         <div class="px-40 flex flex-1 justify-center py-5">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="@container">
-              <div class="@[480px]:px-4 @[480px]:py-3">
-                <div
-                  class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-[#111714] @[480px]:rounded-lg min-h-80"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1tZCsP2nyukRGsj9BDJqLHU4_jHa0oSeSX2-lQz9L4umi6UmyCNl7SFsVPKkgAzyU2cKcQtE1srxWjndMuyxgrfbMlYy3fa-jEX088sm_Ix6G1X4SDNpuBdz_GF5xMlkMEAh6--CxuopJCxFMuNB7FiuikXDe7I-rlLS22PnHW6b1dIkk_x9t-ySH8h_jASjXXqtKhEjS7_nJL1aTTMI9iS7rznrpkIX3t8jyBm18Rng-JfdlHRoJjO3Jt2MnRALROrNIl14jj5o");'
-                ></div>
+            <div class="flex flex-wrap gap-2 p-4">
+              <a class="text-[#9dacbe] text-base font-medium leading-normal" href="#">My Books</a>
+              <span class="text-[#9dacbe] text-base font-medium leading-normal">/</span>
+              <span class="text-white text-base font-medium leading-normal">The Secret Garden</span>
+            </div>
+            <div class="flex p-4 @container">
+              <div class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:justify-between">
+                <div class="flex gap-4">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-xl min-h-32 w-32"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA8vZe6r0j1rW99PqxElUSI6mUm4EzNx7hYrWrhRi41ge99LYzwMjZhmdHHVBQ1tEZvbdBjjkQfYYZvCCoj86q1If475JBVgTlP6R8pUVkwhQWc3Vf6o99DchmwCxOBZOIe7BRSXzB5qkXT1bLcLV77EudNRtNySlsdrLuJyji3SLLGhglhnXQa3q6JfHQoYiiIvUnY-pZobrWKbayZffXjSiROett388IuISZkHVjCXkwbUsfuKlcUu3NHkVNXNV-hrUUnA_v4oV93");'
+                  ></div>
+                  <div class="flex flex-col">
+                    <p class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">The Secret Garden</p>
+                    <p class="text-[#9dacbe] text-base font-normal leading-normal">Frances Hodgson Burnett</p>
+                    <p class="text-[#9dacbe] text-base font-normal leading-normal">Fiction · 1911</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <h1 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 text-left pb-3 pt-5">The Quantum Paradox</h1>
-            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">By Anya Sharma</p>
-            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">Science Fiction</p>
-            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
-              Synopsis: In a world where quantum mechanics dictates reality, Dr. Anya Sharma discovers a paradox that could unravel the fabric of existence. As she delves deeper,
-              she uncovers a conspiracy that spans dimensions, forcing her to confront her own past and the true nature of reality.
-            </p>
-            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Reading Progress</h3>
+            <div class="pb-3">
+              <div class="flex border-b border-[#3d4b5c] px-4 gap-8">
+                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-[#b2cae5] text-white pb-[13px] pt-4" href="#">
+                  <p class="text-white text-sm font-bold leading-normal tracking-[0.015em]">Overview</p>
+                </a>
+                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#9dacbe] pb-[13px] pt-4" href="#">
+                  <p class="text-[#9dacbe] text-sm font-bold leading-normal tracking-[0.015em]">Notes</p>
+                </a>
+                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#9dacbe] pb-[13px] pt-4" href="#">
+                  <p class="text-[#9dacbe] text-sm font-bold leading-normal tracking-[0.015em]">Reviews</p>
+                </a>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Reading Progress</h2>
             <div class="flex flex-col gap-3 p-4">
               <div class="flex gap-6 justify-between">
                 <p class="text-white text-base font-medium leading-normal">Progress</p>
-                <p class="text-white text-sm font-normal leading-normal">60%</p>
+                <p class="text-white text-sm font-normal leading-normal">75%</p>
               </div>
-              <div class="rounded bg-[#3d5245]"><div class="h-2 rounded bg-white" style="width: 60%;"></div></div>
+              <div class="rounded bg-[#3d4b5c]"><div class="h-2 rounded bg-[#b2cae5]" style="width: 75%;"></div></div>
+              <p class="text-[#9dacbe] text-sm font-normal leading-normal">225/300 pages read</p>
             </div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-white text-base font-medium leading-normal pb-2">Current Chapter</p>
-                <input
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-[#3d5245] bg-[#1c2620] focus:border-[#3d5245] h-14 placeholder:text-[#9eb7a8] p-[15px] text-base font-normal leading-normal"
-                  value=""
-                />
-              </label>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About the Book</h2>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+              The Secret Garden tells the story of Mary Lennox, a spoiled and neglected girl who is sent to live with her uncle in a large, isolated manor in the English
+              countryside after her parents' death. There, she discovers a hidden, overgrown garden and, with the help of new friends, begins to restore it to its former glory.
+              Through this process, Mary undergoes a transformation, learning about nature, friendship, and the importance of kindness and compassion.
+            </p>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">My Edition</h2>
+            <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3d4b5c] py-5">
+                <p class="text-[#9dacbe] text-sm font-normal leading-normal">Format</p>
+                <p class="text-white text-sm font-normal leading-normal">Paperback</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3d4b5c] py-5">
+                <p class="text-[#9dacbe] text-sm font-normal leading-normal">Pages</p>
+                <p class="text-white text-sm font-normal leading-normal">300</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3d4b5c] py-5">
+                <p class="text-[#9dacbe] text-sm font-normal leading-normal">Language</p>
+                <p class="text-white text-sm font-normal leading-normal">English</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3d4b5c] py-5">
+                <p class="text-[#9dacbe] text-sm font-normal leading-normal">Publisher</p>
+                <p class="text-white text-sm font-normal leading-normal">HarperCollins</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3d4b5c] py-5">
+                <p class="text-[#9dacbe] text-sm font-normal leading-normal">Published</p>
+                <p class="text-white text-sm font-normal leading-normal">1911</p>
+              </div>
             </div>
-            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Actions</h3>
-            <div class="flex justify-center">
-              <div class="flex flex-1 gap-3 max-w-[480px] flex-col items-stretch px-4 py-3">
-                <button
-                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#29382f] text-white text-sm font-bold leading-normal tracking-[0.015em] w-full"
-                >
-                  <span class="truncate">Add Notes</span>
-                </button>
-                <button
-                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#29382f] text-white text-sm font-bold leading-normal tracking-[0.015em] w-full"
-                >
-                  <span class="truncate">Rate Book</span>
-                </button>
-                <button
-                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#29382f] text-white text-sm font-bold leading-normal tracking-[0.015em] w-full"
-                >
-                  <span class="truncate">Change Status</span>
-                </button>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Community Reviews</h2>
+            <div class="flex flex-wrap gap-x-8 gap-y-6 p-4">
+              <div class="flex flex-col gap-2">
+                <p class="text-white text-4xl font-black leading-tight tracking-[-0.033em]">4.5</p>
+                <div class="flex gap-0.5">
+                  <div class="text-[#b2cae5]" data-icon="Star" data-size="18px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#b2cae5]" data-icon="Star" data-size="18px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#b2cae5]" data-icon="Star" data-size="18px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#b2cae5]" data-icon="Star" data-size="18px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#b2cae5]" data-icon="Star" data-size="18px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-white text-base font-normal leading-normal">150 reviews</p>
+              </div>
+              <div class="grid min-w-[200px] max-w-[400px] flex-1 grid-cols-[20px_1fr_40px] items-center gap-y-3">
+                <p class="text-white text-sm font-normal leading-normal">5</p>
+                <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#3d4b5c]"><div class="rounded-full bg-[#b2cae5]" style="width: 40%;"></div></div>
+                <p class="text-[#9dacbe] text-sm font-normal leading-normal text-right">40%</p>
+                <p class="text-white text-sm font-normal leading-normal">4</p>
+                <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#3d4b5c]"><div class="rounded-full bg-[#b2cae5]" style="width: 30%;"></div></div>
+                <p class="text-[#9dacbe] text-sm font-normal leading-normal text-right">30%</p>
+                <p class="text-white text-sm font-normal leading-normal">3</p>
+                <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#3d4b5c]"><div class="rounded-full bg-[#b2cae5]" style="width: 15%;"></div></div>
+                <p class="text-[#9dacbe] text-sm font-normal leading-normal text-right">15%</p>
+                <p class="text-white text-sm font-normal leading-normal">2</p>
+                <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#3d4b5c]"><div class="rounded-full bg-[#b2cae5]" style="width: 10%;"></div></div>
+                <p class="text-[#9dacbe] text-sm font-normal leading-normal text-right">10%</p>
+                <p class="text-white text-sm font-normal leading-normal">1</p>
+                <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#3d4b5c]"><div class="rounded-full bg-[#b2cae5]" style="width: 5%;"></div></div>
+                <p class="text-[#9dacbe] text-sm font-normal leading-normal text-right">5%</p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-8 overflow-x-hidden bg-[#14191f] p-4">
+              <div class="flex flex-col gap-3 bg-[#14191f]">
+                <div class="flex items-center gap-3">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAznlpNiWqLIthXs14evj8IM5KWU6IJJviVm1B44j2I2IAOsbyMh-CoQ_hyR9sN1uA4-UlZ5JHGgWTf7BT0_8bRdETOrGCDd6XkwqVG9j95fqwZAi_K7NiOuxfqDgUlozu3JAxGw1cRHNqiyHMp36hDTG1sZjPGFYgDLzp-7q-6jfMXlMn5YjT7C5OxtRVZgBnbiFSG_bMz0K28st_nhWwBCR2q96_B7l7thFQbge2a6qpQt5jpXDrUbxQxPzoUsVyRaBq60RH9t4aG");'
+                  ></div>
+                  <div class="flex-1">
+                    <p class="text-white text-base font-medium leading-normal">Olivia Carter</p>
+                    <p class="text-[#9dacbe] text-sm font-normal leading-normal">2 months ago</p>
+                  </div>
+                </div>
+                <div class="flex gap-0.5">
+                  <div class="text-[#b2cae5]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#b2cae5]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#b2cae5]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#b2cae5]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#b2cae5]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-white text-base font-normal leading-normal">
+                  This book is a timeless classic that I absolutely adored. The characters are well-developed, and the story is both heartwarming and inspiring. I highly recommend
+                  it to readers of all ages.
+                </p>
+                <div class="flex gap-9 text-[#9dacbe]">
+                  <button class="flex items-center gap-2">
+                    <div class="text-inherit" data-icon="ThumbsUp" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M234,80.12A24,24,0,0,0,216,72H160V56a40,40,0,0,0-40-40,8,8,0,0,0-7.16,4.42L75.06,96H32a16,16,0,0,0-16,16v88a16,16,0,0,0,16,16H204a24,24,0,0,0,23.82-21l12-96A24,24,0,0,0,234,80.12ZM32,112H72v88H32ZM223.94,97l-12,96a8,8,0,0,1-7.94,7H88V105.89l36.71-73.43A24,24,0,0,1,144,56V80a8,8,0,0,0,8,8h64a8,8,0,0,1,7.94,9Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="text-inherit">25</p>
+                  </button>
+                  <button class="flex items-center gap-2">
+                    <div class="text-inherit" data-icon="ThumbsDown" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M239.82,157l-12-96A24,24,0,0,0,204,40H32A16,16,0,0,0,16,56v88a16,16,0,0,0,16,16H75.06l37.78,75.58A8,8,0,0,0,120,240a40,40,0,0,0,40-40V184h56a24,24,0,0,0,23.82-27ZM72,144H32V56H72Zm150,21.29a7.88,7.88,0,0,1-6,2.71H152a8,8,0,0,0-8,8v24a24,24,0,0,1-19.29,23.54L88,150.11V56H204a8,8,0,0,1,7.94,7l12,96A7.87,7.87,0,0,1,222,165.29Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="text-inherit">2</p>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 bg-[#14191f]">
+                <div class="flex items-center gap-3">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDu7xmaTJXEE2NVo86sUnraNlfhO3jARB7-y1chTeph19P_YaYI8dBG0izOmTDRoiKhdSv9x6LU79m7eD8XVPhH10Qei80htAdYnY6n0VVIxRVwAqAES25bwNkKhQXei66gLcKnzd03p5kGDV2Egtw_QH_4ELMStHOdmzbri4X2rO9BpIb8tg0kY9Q0VYv9ao_IGH0WddrsFzanUcto32zKBpJbn6hmppMpS8qfre5JNyPC-KiVnDmPukonJoFi8aw7ZtkA8geD4TIU");'
+                  ></div>
+                  <div class="flex-1">
+                    <p class="text-white text-base font-medium leading-normal">Liam Harper</p>
+                    <p class="text-[#9dacbe] text-sm font-normal leading-normal">3 months ago</p>
+                  </div>
+                </div>
+                <div class="flex gap-0.5">
+                  <div class="text-[#b2cae5]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#b2cae5]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#b2cae5]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#b2cae5]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#54677d]" data-icon="Star" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-white text-base font-normal leading-normal">
+                  A charming story with a touch of magic. While the beginning was a bit slow, the narrative picked up pace and kept me engaged. The themes of growth and renewal are
+                  beautifully portrayed.
+                </p>
+                <div class="flex gap-9 text-[#9dacbe]">
+                  <button class="flex items-center gap-2">
+                    <div class="text-inherit" data-icon="ThumbsUp" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M234,80.12A24,24,0,0,0,216,72H160V56a40,40,0,0,0-40-40,8,8,0,0,0-7.16,4.42L75.06,96H32a16,16,0,0,0-16,16v88a16,16,0,0,0,16,16H204a24,24,0,0,0,23.82-21l12-96A24,24,0,0,0,234,80.12ZM32,112H72v88H32ZM223.94,97l-12,96a8,8,0,0,1-7.94,7H88V105.89l36.71-73.43A24,24,0,0,1,144,56V80a8,8,0,0,0,8,8h64a8,8,0,0,1,7.94,9Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="text-inherit">18</p>
+                  </button>
+                  <button class="flex items-center gap-2">
+                    <div class="text-inherit" data-icon="ThumbsDown" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M239.82,157l-12-96A24,24,0,0,0,204,40H32A16,16,0,0,0,16,56v88a16,16,0,0,0,16,16H75.06l37.78,75.58A8,8,0,0,0,120,240a40,40,0,0,0,40-40V184h56a24,24,0,0,0,23.82-27ZM72,144H32V56H72Zm150,21.29a7.88,7.88,0,0,1-6,2.71H152a8,8,0,0,0-8,8v24a24,24,0,0,1-19.29,23.54L88,150.11V56H204a8,8,0,0,1,7.94,7l12,96A7.87,7.87,0,0,1,222,165.29Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="text-inherit">3</p>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -124,3 +361,4 @@
     </div>
   </body>
 </html>
+
