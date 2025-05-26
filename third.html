@@ -74,19 +74,20 @@
             <div class="flex flex-wrap gap-2 p-4">
               <a class="text-[#9dacbe] text-base font-medium leading-normal" href="#">My Books</a>
               <span class="text-[#9dacbe] text-base font-medium leading-normal">/</span>
-              <span class="text-white text-base font-medium leading-normal">The Secret Garden</span>
+              <span id="breadcrumb-book-title" class="text-white text-base font-medium leading-normal"></span>
             </div>
             <div class="flex p-4 @container">
               <div class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:justify-between">
                 <div class="flex gap-4">
                   <div
+                    id="book-cover-image"
                     class="bg-center bg-no-repeat aspect-square bg-cover rounded-xl min-h-32 w-32"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA8vZe6r0j1rW99PqxElUSI6mUm4EzNx7hYrWrhRi41ge99LYzwMjZhmdHHVBQ1tEZvbdBjjkQfYYZvCCoj86q1If475JBVgTlP6R8pUVkwhQWc3Vf6o99DchmwCxOBZOIe7BRSXzB5qkXT1bLcLV77EudNRtNySlsdrLuJyji3SLLGhglhnXQa3q6JfHQoYiiIvUnY-pZobrWKbayZffXjSiROett388IuISZkHVjCXkwbUsfuKlcUu3NHkVNXNV-hrUUnA_v4oV93");'
+                    style=""
                   ></div>
                   <div class="flex flex-col">
-                    <p class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">The Secret Garden</p>
-                    <p class="text-[#9dacbe] text-base font-normal leading-normal">Frances Hodgson Burnett</p>
-                    <p class="text-[#9dacbe] text-base font-normal leading-normal">Fiction · 1911</p>
+                    <p id="book-title" class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em]"></p>
+                    <p id="book-author" class="text-[#9dacbe] text-base font-normal leading-normal"></p>
+                    <p id="book-category-year" class="text-[#9dacbe] text-base font-normal leading-normal"></p>
                   </div>
                 </div>
               </div>
@@ -96,6 +97,7 @@
                 <a class="flex flex-col items-center justify-center border-b-[3px] border-b-[#b2cae5] text-white pb-[13px] pt-4" href="#">
                   <p class="text-white text-sm font-bold leading-normal tracking-[0.015em]">Overview</p>
                 </a>
+                <!-- For now, Notes and Reviews tabs can remain static or be hidden -->
                 <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#9dacbe] pb-[13px] pt-4" href="#">
                   <p class="text-[#9dacbe] text-sm font-bold leading-normal tracking-[0.015em]">Notes</p>
                 </a>
@@ -108,40 +110,52 @@
             <div class="flex flex-col gap-3 p-4">
               <div class="flex gap-6 justify-between">
                 <p class="text-white text-base font-medium leading-normal">Progress</p>
-                <p class="text-white text-sm font-normal leading-normal">75%</p>
+                <p id="progress-percentage" class="text-white text-sm font-normal leading-normal"></p>
               </div>
-              <div class="rounded bg-[#3d4b5c]"><div class="h-2 rounded bg-[#b2cae5]" style="width: 75%;"></div></div>
-              <p class="text-[#9dacbe] text-sm font-normal leading-normal">225/300 pages read</p>
+              <div class="rounded bg-[#3d4b5c]">
+                <div id="progress-bar" class="h-2 rounded bg-[#b2cae5]" style="width: 0%;"></div>
+              </div>
+              <p id="progress-pages" class="text-[#9dacbe] text-sm font-normal leading-normal"></p>
+              <div class="flex items-center gap-2 mt-2">
+                <label for="currentPageInput" class="text-sm text-white">Current Page:</label>
+                <input type="number" id="currentPageInput" class="form-input bg-[#2b3540] text-white rounded-md p-1 w-20">
+                <button id="updateProgressBtn" class="bg-[#2b3540] text-white px-3 py-1 rounded-md text-sm hover:bg-[#3d4b5c]">Update</button>
+                <select id="statusDropdown" class="form-select bg-[#2b3540] text-white rounded-md p-1 text-sm">
+                    <option value="want_to_read">Want to Read</option>
+                    <option value="currently_reading">Currently Reading</option>
+                    <option value="read">Read</option>
+                </select>
+                 <button id="updateStatusBtn" class="bg-[#2b3540] text-white px-3 py-1 rounded-md text-sm hover:bg-[#3d4b5c]">Set Status</button>
+              </div>
             </div>
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About the Book</h2>
-            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
-              The Secret Garden tells the story of Mary Lennox, a spoiled and neglected girl who is sent to live with her uncle in a large, isolated manor in the English
-              countryside after her parents' death. There, she discovers a hidden, overgrown garden and, with the help of new friends, begins to restore it to its former glory.
-              Through this process, Mary undergoes a transformation, learning about nature, friendship, and the importance of kindness and compassion.
+            <p id="book-description" class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+              <!-- Description will be populated by JavaScript -->
             </p>
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">My Edition</h2>
             <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
               <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3d4b5c] py-5">
                 <p class="text-[#9dacbe] text-sm font-normal leading-normal">Format</p>
-                <p class="text-white text-sm font-normal leading-normal">Paperback</p>
+                <p id="edition-format" class="text-white text-sm font-normal leading-normal"></p>
               </div>
               <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3d4b5c] py-5">
                 <p class="text-[#9dacbe] text-sm font-normal leading-normal">Pages</p>
-                <p class="text-white text-sm font-normal leading-normal">300</p>
+                <p id="edition-pages" class="text-white text-sm font-normal leading-normal"></p>
               </div>
               <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3d4b5c] py-5">
                 <p class="text-[#9dacbe] text-sm font-normal leading-normal">Language</p>
-                <p class="text-white text-sm font-normal leading-normal">English</p>
+                <p id="edition-language" class="text-white text-sm font-normal leading-normal">English</p> <!-- Assuming English, can be dynamic if available -->
               </div>
               <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3d4b5c] py-5">
                 <p class="text-[#9dacbe] text-sm font-normal leading-normal">Publisher</p>
-                <p class="text-white text-sm font-normal leading-normal">HarperCollins</p>
+                <p id="edition-publisher" class="text-white text-sm font-normal leading-normal"></p>
               </div>
               <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3d4b5c] py-5">
                 <p class="text-[#9dacbe] text-sm font-normal leading-normal">Published</p>
-                <p class="text-white text-sm font-normal leading-normal">1911</p>
+                <p id="edition-published-year" class="text-white text-sm font-normal leading-normal"></p>
               </div>
             </div>
+            <!-- Community Reviews section remains static for now -->
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Community Reviews</h2>
             <div class="flex flex-wrap gap-x-8 gap-y-6 p-4">
               <div class="flex flex-col gap-2">
@@ -359,6 +373,7 @@
         </div>
       </div>
     </div>
+    <script src="static/js/book-details.js" defer></script>
   </body>
 </html>
 
